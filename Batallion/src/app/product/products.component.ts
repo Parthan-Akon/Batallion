@@ -10,7 +10,7 @@ template:`
 
 })
 
-export class ProductComponent {
+export class ProductsComponent {
 
     
 }
