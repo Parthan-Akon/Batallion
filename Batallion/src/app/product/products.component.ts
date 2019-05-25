@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
 selector:'app-prod',
 template:`
-<div>
+<div style="text-color:yellow;">
     <h1> product page</h1>
 </div>
 `
