@@ -7,6 +7,9 @@ import { ProductsComponent } from './product/products.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './route';
 import { HomeComponent } from './home/home.component';
+import { InventoryComponent } from './inventory-control/inventory.component';
+import { InventoryDataComponent } from './data/inventory-data.component';
+import { InventoryThumbnailComponent } from './data/inventory-thumbnail.component';
 
 
 @NgModule({
@@ -14,7 +17,10 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     NavBarComponent,
     ProductsComponent,
-    HomeComponent
+    HomeComponent,
+    InventoryComponent,
+    InventoryDataComponent,
+    InventoryThumbnailComponent
   ],
   imports: [
     BrowserModule,
