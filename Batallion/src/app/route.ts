@@ -7,5 +7,6 @@ export const appRoutes: Routes = [
 
     {path:'product',component: ProductsComponent},
     {path:'',component:HomeComponent},
-    {path:'login',component:InventoryComponent}
+    {path:'login',component:InventoryComponent},
+    {path:'', redirectTo:'',pathMatch:'full'}
 ]
