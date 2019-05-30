@@ -1,18 +1,25 @@
 <div>
-        <table style="width: 100%;color: white" class="table table-bordered">
-            <tr>
-                <th>No.</th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>InStock</th>
-                <th>Image</th>
-            </tr>
-            <tr>
-                <td>{{product.id}}</td>
+    <table style="width: 100%;color: white" class="table table-bordered">
+        <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>InStock</th>
+            <th>Image</th>
+        </tr>
+        <tr *ngFor="let prod of product">
+            <td>{{prod.id}}</td>
+            <td>{{prod.name}}</td>
+            <td>{{prod.price}}</td>
+            <td>{{prod.instock}}</td>
+            <td>{{prod.image}}</td>
+        </tr>
+    </table>
+</div>
+
+
+<!-- <td>{{product.id}}</td>
                 <td>{{product.name}}</td>
                 <td>{{product.price}}</td>
                 <td>{{product.instock}}</td>
-                <td>{{product.image}}</td>
-            </tr>
-        </table>
-    </div>
+                <td>{{product.image}}</td> -->
