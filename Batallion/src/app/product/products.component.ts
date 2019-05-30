@@ -1,16 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
+import { DataService } from '../shared/data.service';
 
 @Component({
 selector:'app-prod',
-template:`
-<div style="text-color:yellow;">
-    <h1> product page</h1>
-</div>
-`
+templateUrl:'./products.component.html'
 
 })
 
-export class ProductsComponent {
+export class ProductsComponent implements OnInit  {
+    constructor(private dataService:DataService){
 
-    
+    }
+
+ngOnInit(){
+    this.product = this.dataService.getEvents();
+
+}
+product:any[];
+
 }
