@@ -9,6 +9,7 @@ import { appRoutes } from './route';
 import { HomeComponent } from './home/home.component';
 import { InventoryComponent } from './inventory-control/inventory.component';
 import { InventoryDataComponent } from './data/inventory-data.component';
+import { DataService } from './shared/data.service';
 
 
 
@@ -27,7 +28,7 @@ import { InventoryDataComponent } from './data/inventory-data.component';
     RouterModule.forRoot(appRoutes)
 
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
