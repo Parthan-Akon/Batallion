@@ -10,7 +10,7 @@ import { HomeComponent } from './home/home.component';
 
 import { InventoryDataComponent } from './data/inventory-data.component';
 import { DataService } from './shared/data.service';
-import { InventoryThumbnailComponent } from './data/inventory-thumbnail.component';
+
 
 
 
@@ -22,7 +22,7 @@ import { InventoryThumbnailComponent } from './data/inventory-thumbnail.componen
     HomeComponent,
     
     InventoryDataComponent,
-    InventoryThumbnailComponent
+    
     
   ],
   imports: [
