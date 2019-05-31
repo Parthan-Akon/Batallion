@@ -1,7 +1,7 @@
 import { Routes} from '@angular/router';
 import { ProductsComponent } from './product/products.component';
 import { HomeComponent } from './home/home.component';
-import { InventoryComponent } from './inventory-control/inventory.component';
+
 import { InventoryDataComponent } from './data/inventory-data.component';
 
 export const appRoutes: Routes = [
