@@ -18,28 +18,9 @@
 </div>
 -->
 <div>
-    <div class="container">
-        <span>
-            <h3 style="font-family: Arial Narrow, sans-serif ;color: rgb(240, 240, 235)">Welcome Admin</h3>
-        </span>
-
-        <div><span>
-                <hr></span></div>
-        <br>
-        <div class="btn-group" style="width: 100%">
-            <button type="button" class="btn btn-primary">Silencers</button>
-            <button type="button" class="btn btn-primary">Accessories</button>
-            <button type="button" class="btn btn-primary">Lubricants</button>
-            <button type="button" class="btn btn-primary">Riding Gears</button>
-            <button type="button" class="btn btn-primary">Crash guards</button>
-            <button type="button" class="btn btn-primary">Helmets</button>
-            <button type="button" class="btn btn-primary">HeadLights</button>
-
-        </div>
-
-        <br>
-
-    </div>
+        <div class="md-form active-pink active-pink-2 mb-3 mt-0">
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search" [(ngModel)] = "query">
+              </div>
 
     <div>
         <table style="width: 100%;color: white" class="table table-bordered table-dark table-striped" >
@@ -50,7 +31,7 @@
                 <th>InStock</th>
                 <th>Image</th>
             </tr>
-            <tr  *ngFor="let prod of product"  >
+            <tr  *ngFor="let prod of product | search: 'id,name':query">
                 <td>{{prod.id}}</td>
                 <td>{{prod.name}}</td>
                 <td>{{prod.price}}</td>

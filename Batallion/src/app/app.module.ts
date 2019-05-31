@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 
 import { InventoryDataComponent } from './data/inventory-data.component';
 import { DataService } from './shared/data.service';
+import { SearchPipePipe } from './search-pipe.pipe';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -20,13 +22,15 @@ import { DataService } from './shared/data.service';
     NavBarComponent,
     ProductsComponent,
     HomeComponent,
-    
+     
     InventoryDataComponent,
+    SearchPipePipe,
     
     
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot(appRoutes)
 
   ],
