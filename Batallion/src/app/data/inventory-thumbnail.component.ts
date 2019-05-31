@@ -6,6 +6,7 @@ import { Component, Input } from '@angular/core';
 })
 
 export class InventoryThumbnailComponent {
-    @Input() product:any
+
+    @Input() product1: any;
 
 }

@@ -1,0 +1,19 @@
+<div>
+    <table style="width: 100%;color: white" class="table table-bordered table-dark table-striped">
+        <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>InStock</th>
+            <th>Image</th>
+        </tr>
+        <tr  *ngFor="let prod of product1" >
+            <td>{{prod.id}}</td>
+            <td>{{prod.name}}</td>
+            <td>{{prod.price}}</td>
+            <td>{{prod.instock}}</td>
+            <td>{{prod.image}}</td>
+        </tr>
+    </table>
+</div>
+

@@ -1,5 +1,5 @@
-<div>
-    <table style="width: 100%;color: white" class="table table-bordered">
+<!--<div>
+    <table style="width: 100%;color: white" class="table table-bordered table-dark table-striped">
         <tr>
             <th>No.</th>
             <th>Name</th>
@@ -16,8 +16,35 @@
         </tr>
     </table>
 </div>
+-->
+<div>
+    <div class="container">
+        <span>
+            <h3 style="font-family: Arial Narrow, sans-serif ;color: rgb(240, 240, 235)">Welcome Admin</h3>
+        </span>
+
+        <div><span>
+                <hr></span></div>
+        <br>
+        <div class="btn-group" style="width: 100%">
+            <button type="button" class="btn btn-primary">Silencers</button>
+            <button type="button" class="btn btn-primary">Accessories</button>
+            <button type="button" class="btn btn-primary">Lubricants</button>
+            <button type="button" class="btn btn-primary">Riding Gears</button>
+            <button type="button" class="btn btn-primary">Crash guards</button>
+            <button type="button" class="btn btn-primary">Helmets</button>
+            <button type="button" class="btn btn-primary">HeadLights</button>
+
+        </div>
+
+        <br>
+
+    </div>
 
 
+    <inv-thumb [product1]="product"></inv-thumb>
+
+</div>
 <!-- <td>{{product.id}}</td>
                 <td>{{product.name}}</td>
                 <td>{{product.price}}</td>
