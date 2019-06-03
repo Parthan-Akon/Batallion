@@ -30,13 +30,15 @@
                 <th>Price</th>
                 <th>InStock</th>
                 <th>Image</th>
+                <th>Category</th>
             </tr>
-            <tr  *ngFor="let prod of product | search: 'id,name':query">
+            <tr  *ngFor="let prod of product | search: 'category,name':query">
                 <td>{{prod.id}}</td>
                 <td>{{prod.name}}</td>
                 <td>{{prod.price}}</td>
                 <td>{{prod.instock}}</td>
                 <td>{{prod.image}}</td>
+                <td>{{prod.category}}</td>
             </tr>
         </table>
     </div>
